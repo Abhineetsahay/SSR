@@ -1,10 +1,16 @@
+import { Route, Routes } from "react-router-dom"
+import Home from "./components/Home"
+import UserStat from "./components/UserStat"
+
 function App() {
 
+  
   return (
     <>
-      <div className="bg-black">
-        Hi
-       </div>
+      <Routes>
+        <Route path="/" element={<Home/>}/>
+        <Route path="/userStat" element={<UserStat/>}/>
+      </Routes>
     </>
   )
 }
